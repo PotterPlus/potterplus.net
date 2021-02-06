@@ -1,0 +1,45 @@
+extends layout
+
+block content
+    .parallax-2(style='min-height:400px;')
+    #section-welcome.jumbotron
+        .container.py-5
+            .row
+                h1.display-1.font-playfair Support center
+                    p.lead.font-jsl Here you can find support for issues you may be having, FAQs, contact information, etc.
+                    hr
+            .row
+                .col-5
+                    .card
+                        .card-header.font-playfair Appendix
+                        .card-body
+                            ol.lead.font-jsl
+                                li
+                                    a(href='#section-faq') Frequently Asked Questions
+                                li
+                                    a(href='#section-contact') Contact Information
+                .col-5
+                    form#form-lookup(method='post', action='/support')
+                        .form-group
+                            label(for='inputQuery')
+                            .input-group
+                                input#inputQuery.form-control(type='text', name='query' placeholder='I lost my wand')
+                                .input-group-append
+                                    button.btn.btn-outline-primary(type='submit') Go
+            .row.pt-5
+                hr
+            #section-faq.row
+                h1.display-3.font-playfair Frequently Asked Questions
+                ul.lead.font-jsl
+                    li
+                        span I lost my wand. What can I do?&nbsp;
+                        span.text-muted Contact a server admin when you are online.
+    .parallax-2(style='min-height:200px;')
+    #section-contact.jumbotron
+        .container
+            .row.py-5
+                h1.display-3.font-playfair Contact information
+                p.lead.font-jsl Need to contact PotterPlus? No problem!
+                p.lead.font-jsl
+                    span To contact about business inquiries, please email:&nbsp;
+                    a(href='mailto:grisstyl@gmail.com' target='_blank') grisstyl@gmail.com

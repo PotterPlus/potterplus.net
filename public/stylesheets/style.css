@@ -1,0 +1,86 @@
+.bg-black {
+  background-color: black;
+  color: white; }
+  .bg-black a {
+    color: white; }
+
+.bg-off-white {
+  background-color: #e9ecef;
+  color: black; }
+
+.bg-paper {
+  background-image: url("http://api.thumbr.it/whitenoise-361x370.png?background=F0F0D1&noise=5c5c5c&density=1&opacity=62"); }
+
+.btn-outline-discord {
+  outline-color: #7289da;
+  background-color: #7289da;
+  color: white; }
+
+.btn-outline-discord:hover {
+  color: #7289da;
+  border-color: #7289da;
+  background-color: transparent; }
+
+.text-discord {
+  color: #7289da; }
+
+@font-face {
+  font-family: 'berylium';
+  src: url("/../fonts/berylium_bd.otf"); }
+
+@font-face {
+  font-family: 'minecraft';
+  src: url("../fonts/MinecraftRegular-Bmg3.otf"); }
+
+@font-face {
+  font-family: 'playfair';
+  src: url("../fonts/PlayfairDisplay-VariableFont_wght.ttf"); }
+
+@font-face {
+  font-family: 'potter';
+  src: url("../fonts/HARRYP__.TTF"); }
+
+.font-jsl {
+  font-family: berylium, sans-serif; }
+
+.font-minecraft {
+  font-family: minecraft, sans-serif; }
+
+.font-playfair {
+  font-family: playfair, sans-serif; }
+
+.font-potter {
+  font-family: potter, sans-serif; }
+
+@keyframes animated-text {
+  from {
+    width: 0; }
+  to {
+    width: 472px; } }
+
+@keyframes animated-cursor {
+  from {
+    border-right-color: white; }
+  to {
+    border-right-color: transparent; } }
+
+.typewriter {
+  border-right: solid 3px rgba(0, 255, 0, 0.75);
+  white-space: nowrap;
+  overflow: hidden;
+  font-family: minecraft, monospace;
+  font-size: 28px;
+  color: white;
+  animation: animated-text 4s steps(29, end) 1s 1 normal both, animated-cursor 600ms steps(29, end) infinite; }
+
+.pp-navbar {
+  backdrop-filter: blur(4px);
+  background-color: black;
+  opacity: .9; }
+  .pp-navbar .dropdown-item:hover {
+    background-color: black;
+    opacity: 1; }
+  .pp-navbar a {
+    color: white; }
+
+/*# sourceMappingURL=style.css.map */

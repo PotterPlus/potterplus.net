@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  .parallax-3(style='min-height:200px')
+  #content.jumbotron
+    .container.py-5
+      .alert.alert-danger
+        a.btn.btn-outline-light(href='/')
+          | <i class="bi bi-arrow-left"></i> Return home
+        p.lead.mt-2='There was a problem loading the content you are looking for!'
+      h1.display-4=error.status
+        small.ml-5.text-muted=message
+      pre #{error.stack}

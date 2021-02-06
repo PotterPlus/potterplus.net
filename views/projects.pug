@@ -1,0 +1,94 @@
+extends layout
+
+block content
+    .parallax-5(style='min-height:400px')
+    #section-welcome.jumbotron
+        .container.py-5
+            .row
+                .col-10
+                    h1.display-1.font-playfair
+                        span PotterPlus Projects
+                    p.lead.font-jsl PotterPlus is centered around a GitHub organization led by T0xicTyler. This organization contains projects related to NathanWolf's Magic plugin for Minecraft servers and recreating Harry Potter within that game.
+                    p.lead.font-jsl We have created and continue to maintain a couple of projects:
+                .col-2
+                    a.pl-5.btn.btn-light(href='https://github.com/PotterPlus' target='_blank')
+                        i.bi.bi-github &nbsp;
+                        span Organization
+            .row
+                hr
+            .row.pb-3
+                .card.card-body
+                    h3.font-playfair
+                        span PotterPlus&nbsp;
+                        small.text-muted Magic plugin configuration
+                    a.lead(href='https://github.com/PotterPlus/PotterPlus' target='_blank')
+                        i.bi.bi-github &nbsp;
+                        span Repository
+                    p.lead.font-jsl The configuration for NathanWolf's Magic plugin which faithfully recreates the world of Harry Potter in Minecraft through the addition of wands, spells, mobs, many magical items, assorted bits of Magic, etc.
+            .row.pb-3
+                .card.card-body
+                    h3.font-playfair
+                        span MagicScan&nbsp;
+                        small.text-muted Magic addon plugin for analyzing Magic setups
+                    a.lead(href='https://github.com/PotterPlus/MagicScan' target='_blank')
+                        i.bi.bi-github &nbsp;
+                        span Repository
+                    p.lead.font-jsl A plugin which integrates with Magic to give you interactive lists and in-depth analyses of things in Magic like spells, wands, paths, mobs, and more to greatly improve your Magic setup.
+                    p.lead.font-jsl This plugin allows you to create scans which review your Magic things against sets of rules to root out issues in spell structure, naming conventions, probable bugs, unnecessary parameters, etc.
+            .row
+                .card.card-body
+                    h3.font-playfair
+                        span PotterPlusAPI&nbsp;
+                        small.text-muted Plugin API to supercharge development
+                    a.lead(href='https://github.com/PotterPlus/PotterPlusAPI' target='_blank')
+                        i.bi.bi-github &nbsp;
+                        span Repository
+                    p.lead.font-jsl An API which greatly simplifies plugin development in areas such as command creation, flatfile/DB storage management, item creation, GUI creation, and much more! This API is used to power custom PotterPlus plugins.
+    .parallax-5(style='min-height:200px')
+    #section-potterplus.jumbotron
+        .container.py-5
+            .row
+                h1.display-2.font-playfair PotterPlus
+                    span.display-4.d-block
+                        small.text-muted Magic plugin configuration
+            hr.row
+            .row
+                .col-9
+                    p.lead.font-jsl Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusamus accusantium consequuntur ratione sint tempore tenetur ullam voluptate. Culpa cupiditate dicta dolore eveniet ipsa ipsam laboriosam laborum porro temporibus voluptates.
+                    p.lead.font-jsl Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam ipsam maiores odio quibusdam reiciendis! Aliquam aspernatur aut autem commodi eligendi enim nemo neque optio porro quas repellat sequi, tempora voluptate.
+                .col-3
+                    img.img-thumbnail(src='/images/greenhouses.png')
+            .row
+                .col-3
+                    img.img-thumbnail(src='/images/hog_bridge.png')
+                .col-9
+                    p.lead.font-jsl Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate facilis magni nemo quasi quis tempore ullam? Architecto aspernatur consectetur consequuntur cum eligendi enim est in ipsam iste quae qui, quod!
+                    p.lead.font-jsl Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aperiam asperiores dolores facilis itaque necessitatibus ratione soluta velit! Aliquam aliquid consectetur cumque facilis id illo iure quod sequi tempora voluptate?
+    .parallax-5(style='min-height:200px')
+    #section-magicscan.jumbotron
+        .container.py-5
+            .row
+                h1.display-2.font-playfair MagicScan
+                    span.display-4.d-block
+                        small.text-muted Magic addon plugin for analyzing Magic setups
+            hr.row
+            .row
+                .col-9
+                    p.lead.font-jsl This is a plugin created by T0xicTyler with an initial goal: iterate through all of Magic's spells, compare them to a "rule", and then notify the dispatcher if there was an issue. MagicScan has evolved to look into most elements of Magic with the ability to list and describe them via text or GUIs.
+                    p.lead.font-jsl This plugin utilizes a shaded version of PotterPlusAPI to power its GUIs, YAML file management, commands, etc.
+                .col-3
+                    img.img-thumbnail(src='/images/parallax/owlery.png')
+    .parallax-5(style='min-height:200px')
+    #section-potterplusapi.jumbotron
+        .container.py-5
+            .row
+                h1.display-2.font-playfair PotterPlusAPI
+                    span.display-4.d-block
+                        small.text-muted Plugin API to supercharge development
+            hr.row
+            .row
+                .col-9
+                    p.lead.font-jsl Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab consequatur dolorem dolores eum fuga illum inventore optio perferendis perspiciatis quidem, quisquam, quo sint, totam unde vel veritatis voluptate voluptatem voluptates.
+                    p.lead.font-jsl Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab consequatur dolorem dolores eum fuga illum inventore optio perferendis perspiciatis quidem, quisquam, quo sint, totam unde vel veritatis voluptate voluptatem voluptates.
+                .col-3
+                    img.img-thumbnail(src='/images/staircases.png')

@@ -1,0 +1,61 @@
+extends layout
+
+block content
+  .parallax-hog-night-3(style='min-height:1200px')
+    .container-fluid
+      .row(style='padding-top:500px')
+        .offset-4.col-4
+          .bg-black
+            h2.font-minecraft.typewriter.p-2='potterplus.mc.gg'
+          .text-center.mt-5
+            a.btn.btn-lg.btn-outline-light(href='#section-welcome')='Begin your adventure'
+  #section-welcome.jumbotron
+    .container.py-5
+      .row
+        h1.font-playfair='Welcome to PotterPlus!'
+        hr
+      .row
+        .col-lg-8.col-md-12
+          p.lead.font-jsl='Here you will begin your adventure through Hogwarts School of Witchcraft and Wizardry. You can learn spells, duel, brew potions, explore the castle, attend classes, fight creatures, and much more! And who knows what lies beyond the castle\'s grounds?'
+          h3.font-playfair='How do I get started?'
+          p.lead.font-jsl='Things you\'ll need:'
+          ol.lead.font-jsl
+            li='Minecraft Java Edition 1.16.5'
+            li='Latest OptiFine'
+        .col-lg-4.col-md-12
+          .card
+            .card-header Not logged in
+            .card-body
+              p.card-text='Log in to access your PotterPlus account and explore the site.'
+              a.btn.btn-outline-primary(href='/login')='Log in'
+              a.btn.btn-link.mt-2(href='/register')='I need to create an account'
+  .parallax-hog-night
+  #section-news.jumbotron
+    .container.py-5
+      .row
+        .col-lg-9.col-sm-12
+          h1.font-playfair='Recent News'
+          hr
+          .news-post.alert.alert-light
+            h3.font-playfair
+              | Moved to Express<br>
+              | <small>2/4/21 at 7:05 PM</small>
+            p.lead.font-jsl='The website now uses Node.js and Express to power its backend, making the entire project powered by JavaScript! The site uses Pug for its templating engine, Sass for its CSS preprocessor, and a Bootstrap base.'
+          .news-post.alert.alert-light
+            h3.font-playfair
+              | Beginning of website development<br>
+              | <small>2/4/21 at 12:06 AM</small>
+            p.lead.font-jsl='This post marks the beginning of this website\'s development. This website will serve as a portal for the PotterPlus organization and its related projects and servers.'
+
+          a.col-4.btn.btn-outline-primary(href='#')='Read more...'
+        .col-lg-3.col-sm-12
+          h1.font-playfair='Alerts'
+          hr
+          .alert.alert-danger
+            h3='Site under development'
+            hr
+            p='The site is currently under development. Some features could be broken or missing entirely and this website is not representative of the final experience.'
+  .parallax-hog-night(style='min-height:300px')
+
+block scripts
+  script(src='/scripts/index.js')

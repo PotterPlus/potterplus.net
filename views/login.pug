@@ -1,0 +1,42 @@
+extends layout
+
+block content
+    .parallax-2(style='min-height:300px')
+    .jumbotron
+        .container
+            .row.py-5
+                .col-7
+                    h1.font-playfair Log in to your PotterPlus account
+                    hr
+                    #error-box.alert.alert-danger
+                        h4 Something went wrong!
+                        p.lead There was an issue submitting your PotterPlus account info.
+                    form#form-login(action='/login' method='post')
+                        #inputUsernameGroup.form-group
+                            label(for='inputUsername') Minecraft username
+                            input#inputUsername.form-control(type='text', name='username' placeholder='Enter your Minecraft username...')
+                            small.form-text.text-muted Click below to log in with your email.
+                        #inputEmailGroup.form-group
+                            label(for='inputEmail') Email address
+                            input#inputEmail.form-control(type='email', aria-describedby='emailHelp', name='email' placeholder='Enter your email address...')
+                            small.form-text.text-muted Click below to log in with your Minecraft username.
+                        .form-group
+                            label(for='inputPassword') Password
+                            input#inputPassword.form-control(type='password', placeholder='Enter your password...', name='password' required)
+                        .mt-3
+                            button.btn.btn-outline-primary(type='submit') Access your account
+                            button#switchToUsername.btn.btn-outline-primary Use Minecraft username
+                            button#switchToEmail.btn.btn-outline-primary Use email address
+                    .mt-3
+                        a.btn.btn-link(href='/create-account') Need to create an account?
+                        br
+                        a.btn.btn-link(href='/forgot-password') Forgot your password?
+                .offset-2.col-3
+                    .alert.alert-success
+                        a.lead.text-white(href='/support') Visit the support center
+                    .alert.alert-light
+                        h3.display-6 About PotterPlus accounts
+                        p.lead Your PotterPlus account is linked to your Minecraft account and synchronizes your Minecraft, website, and Discord experiences.
+
+block scripts
+    script(src='/scripts/login.js')

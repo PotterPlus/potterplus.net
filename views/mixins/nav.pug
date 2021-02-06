@@ -1,0 +1,28 @@
+mixin nav
+    nav#nav.navbar.fixed-top.pp-navbar
+        a.navbar-brand.font-potter.m-1(style='font-size: 28px;' href='/')
+            span PotterPlus&nbsp;
+            span.text-muted.font-jsl(style='font-size:25px;')=title
+        button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarNavDropdown', aria-controls='navbarNavDropdown', aria-expanded='false', aria-label='Toggle navigation')
+            span.navbar-toggler-icon.text-white
+                i.bi.bi-lightning
+        #navbarNavDropdown.collapse.navbar-collapse
+            ul.navbar-nav.ml-3.pp-navbar
+                li.nav-item.active
+                    a.nav-link.font-playfair(href='/')
+                        span &nbsp;&nbsp;
+                        i.bi.bi-house-fill.ml-4 &nbsp;
+                        span Home
+                li.nav-item
+                    a.nav-link.font-playfair(href='/discord')
+                        span &nbsp;&nbsp;
+                        i.bi.bi-discord.ml-4 &nbsp;
+                        span Discord
+                li.nav-item.dropdown
+                    a#navbarDropdownMenuLink.nav-link.font-playfair.dropdown-toggle(href='#', data-toggle='dropdown', aria-expanded='false')
+                        span &nbsp;&nbsp;
+                        i.bi.bi-person-fill &nbsp;
+                        span Account
+                    .dropdown-menu.bg-black(aria-labelledby='navbarDropdownMenuLink')
+                        a.font-playfair.text-white.dropdown-item(href='/login') Log in
+                        a.font-playfair.text-white.dropdown-item(href='/register') Register

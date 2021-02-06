@@ -1,0 +1,98 @@
+.parallax-hog-day {
+  min-height: 400px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../images/parallax/hog_day.png"); }
+
+.parallax-hog-day-2 {
+  min-height: 400px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../images/parallax/hog_day_2.png"); }
+
+.parallax-hog-day-3 {
+  min-height: 400px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../images/parallax/hog_day_3.png");
+  min-height: 1000px; }
+
+.parallax-hog-night {
+  min-height: 400px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../images/parallax/hog_night.png"); }
+
+.parallax-hog-night-2 {
+  min-height: 400px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../images/parallax/hog_night_2.png"); }
+
+.parallax-hog-night-3 {
+  min-height: 400px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../images/parallax/hog_night_3.png"); }
+
+.parallax-greenhouses {
+  min-height: 400px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../images/parallax/greenhouses.png"); }
+
+.parallax-hog-bridge {
+  min-height: 400px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../images/parallax/hog_bridge.png"); }
+
+.parallax-owlery {
+  min-height: 400px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../images/parallax/owlery.png"); }
+
+.parallax-staircases {
+  min-height: 400px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../images/parallax/staircases.png"); }
+
+.parallax-training-grounds {
+  min-height: 400px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../images/parallax/training_grounds.png"); }
+
+.parallax-white-tomb {
+  min-height: 400px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../images/parallax/white_tomb.png"); }
+
+/*# sourceMappingURL=parallax.css.map */
